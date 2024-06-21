@@ -1,0 +1,22 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    
+}
+
+.btn {
+    
+    padding: 19px 28px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 14px;
+    border: 1px #000 solid;
+
+    &:hover {
+        border: 1px #000 solid;
+        background-color: #fff;
+        color: #000;
+        transition: 0.3s;
+    }
+}
+
+

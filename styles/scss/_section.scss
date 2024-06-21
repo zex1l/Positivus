@@ -1,0 +1,28 @@
+.section__header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-title {
+        background-color: var(--green);
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    &-text {
+        width: 510px;
+        @include tablet {
+            text-align: center;
+        }
+    }
+
+}
+
+.section__body {
+    padding: 30px 0 70px 0;
+}

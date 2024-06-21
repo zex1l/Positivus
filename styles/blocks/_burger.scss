@@ -1,0 +1,23 @@
+.header__burger {
+    display: none;
+    position: relative;
+    width: 48px;
+    aspect-ratio: 1;
+
+
+    &::after {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #000;
+        border-radius: 5px;
+        box-shadow: 0 -8px, 0 8px;
+        
+    }
+}

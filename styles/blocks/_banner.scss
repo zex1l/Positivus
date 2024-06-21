@@ -1,0 +1,63 @@
+
+
+.banner {
+    margin-bottom: 70px;
+    border-radius: 65px;
+    height: calc(347px - (2 * 60px));
+    padding: 60px;
+    padding-right: 135px;
+
+    background-color: var(--ligth);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include desktop {
+        padding-right: 60px;
+    }
+
+    @include mobile{
+        padding: 40px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+        width: 500px;
+        
+
+        &-title {
+            font-size: 30px;
+
+            @include tablet {
+                font-size: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+
+            @include tablet {
+                font-size: 14px;
+            }
+        }
+
+        &-btn {
+            font-size: 20px;
+
+            @include tablet {
+                font-size: 14px;
+            }
+            
+        }
+    }
+
+    .banner-img {
+        height: 294px;
+        width: 259px;
+    }
+}

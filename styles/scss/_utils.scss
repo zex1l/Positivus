@@ -1,0 +1,32 @@
+.container {
+    max-width: calc((1240px - 40px) * 2);
+    padding: 0 50px;
+    margin: 0 auto;
+
+
+    @include tablet {
+        padding: 0 15px;
+    }
+}
+
+
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile {
+        display: block !important;
+    }
+}
+
+.visible-hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

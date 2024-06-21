@@ -1,0 +1,75 @@
+.header {
+    padding: 40px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+
+        .header__logo {
+
+            @include tablet {
+                width: 150px;
+                height: 40px;
+            }
+        }
+
+        .header__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 30px;
+
+            &-list {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                @include desktop {
+                    gap: 15px;
+                }
+            }
+
+        
+
+            &-link {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                height: 42px;
+
+                &:hover:after {
+                    width: 100%;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    translate: -50%;
+                    transition: 0.3s;
+                    width: 0;
+                    height: 2px;
+                    background-color: #000;
+                }
+            }
+
+            &-btn {
+                background-color: #fff;
+                color: #000;
+                border: 1px #000 solid;
+
+                &:hover {
+                    background-color: var(--green);
+                    color:  var(--dark);
+                    transition: 0.3s;
+                }
+
+                @include tablet {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}

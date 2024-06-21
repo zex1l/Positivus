@@ -1,0 +1,23 @@
+@import './scss/global',
+        './scss/media',
+        './scss/mixins',
+        './scss/utils',
+        './scss/variables',
+        './scss/reset',
+        './scss/section';
+
+@import  './blocks/header',
+        './blocks/burger',
+        './blocks/mobile-overlay',
+        './blocks/introduce',
+        './blocks/services',
+        './blocks/banner',
+        './blocks/studies',
+        './blocks/process',
+        './blocks/team',
+        './blocks/testimonials',
+        './blocks/contact',
+        './blocks/footer'
+
+
+

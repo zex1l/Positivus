@@ -1,0 +1,73 @@
+.testimonials {
+    background-color: var(--dark);
+    border-radius: 45px;
+    height: 625px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        transform: translateX(324px);
+        
+    }
+
+    &__item {
+        
+        &-box {
+            position: relative;
+            border: 1px var(--green) solid;
+            border-radius: 45px;
+            width: calc(606px - (48px * 2));
+            padding: 52px 48px;
+
+            &:after {
+                content: "";
+                width: 33px;
+                aspect-ratio: 1;
+                position: absolute;
+                top: 91%;
+                left: 8%;
+                rotate: 45deg;
+                clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                border: 1px var(--green) solid;
+                background-color: var(--dark);
+
+            }
+        }
+
+        &-name {
+            padding: 40px 48px;
+            display: flex;
+            flex-direction: column;
+
+            >span:first-child {
+                color: var(--green);
+            }
+        }
+    }
+
+    &__btns {
+        display: flex;
+        gap: 70px;
+       align-items: center;
+
+        >img {
+            cursor: pointer;
+        }
+
+        .btns__stars {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+    
+}

@@ -1,0 +1,83 @@
+.introduce {
+    padding: 35px 0 ;
+    &__body {
+
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+
+        &-content {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 35px;
+
+            width: 531px;
+        }
+
+        &-title {
+            font-size: 60px;
+
+            @include tablet{
+                
+                font-size: 45px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+
+            @include tablet {
+                font-size: 16px;
+            }
+        }
+
+        &-btn {
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        &-img {
+            
+            @include desktop {
+                width: 400px;
+                height: 315px;
+            }
+            
+        }
+    }
+
+    &__company {
+        padding: 30px 0;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include tablet{
+                
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 20px;
+            }
+        
+        }
+
+        &-item {
+            text-align: center;
+            
+            >img {
+                filter: grayscale(1);
+            }
+        }
+
+        
+    }
+}

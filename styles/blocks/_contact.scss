@@ -1,0 +1,52 @@
+.contact {
+    
+    display: flex;
+    justify-content: center;
+    background-color: var(--ligth);
+    padding: 60px 50px 80px 50px;
+    border-radius: 45px;
+    height: calc(673px - (60px + 80px));
+
+    &__form {
+        display: flex;
+        
+        flex-direction: column;
+
+        gap: 20px;
+
+        &-radios {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-input {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            >input {
+                border: 1px #000 solid;
+                outline: none;
+                border-radius: 14px;
+                padding: 18px 30px;
+                width: 556px;
+
+                @include mobile {
+                    width: 360px;
+                }
+            }
+
+            >textarea {
+                padding: 10px 30px;
+                border-radius: 14px;
+                font-family: "Space Grotesk", sans-serif;
+            }
+
+        }
+    }
+
+    &__img {
+        
+    }
+}

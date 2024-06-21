@@ -1,0 +1,63 @@
+.process {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        border: 1px #000 solid;
+        padding: 41px 55px;
+        border-radius: 45px;
+        box-shadow: 0 5px #000;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item__header-text {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                >h3 {
+                    font-size: 60px;
+
+                    @include mobile {
+                        font-size: 40px;
+                    }
+                }
+
+                >span {
+                    font-size: 30px;
+                    font-weight: 700;
+
+                    @include mobile {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            >img {
+                cursor: pointer;
+            }
+        }
+
+        &-body {    
+            padding-top: 20px;
+            .process__item-text {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+hr {
+    border: 1px #000 solid;
+}
+
+.active__procces-item {
+    background-color: var(--green);
+}

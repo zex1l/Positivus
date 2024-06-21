@@ -1,0 +1,68 @@
+.team {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @include desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__item {
+        padding: 35px 50px;
+        border: 1px #000 solid;
+        border-radius: 45px;
+        box-shadow: 0 5px 0px #000;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 10px;
+            padding-bottom: 20px;
+
+            .header__item-link {
+                align-self: start;
+            }
+
+            @include tablet {
+                justify-content: space-evenly;
+            }
+        }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            >span:first-child {
+                font-weight: 700;
+            }
+        }
+
+        &-body {
+            >p {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    &__btn {
+        align-self: flex-end;
+        padding: 20px 76px;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+}
