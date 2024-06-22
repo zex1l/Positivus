@@ -604,7 +604,8 @@ hr {
   display: flex;
   align-items: center;
   gap: 40px;
-  transform: translateX(324px);
+  transform: translateX(346px);
+  transition: transform 0.7s;
 }
 .testimonials__item-box {
   position: relative;
@@ -646,6 +647,9 @@ hr {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+.testimonials__btns .btns__stars > svg #active {
+  fill: var(--green);
 }
 
 .contact {
