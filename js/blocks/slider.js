@@ -57,10 +57,4 @@ const slider = () => {
 }
 
 
-const nextSLide = (sliderList, btn, value) => {
-    btn.addEventListner('click', () => {
-        console.log(1);
-    })
-}
-
 export default slider
